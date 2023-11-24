@@ -1,0 +1,166 @@
+/* Home.css */
+
+/* Style for the button container */
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #330066;
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top to your preference */
+  left: 10px; /* Adjust the distance from the left to your preference */
+  border-radius: 20px;
+}
+
+/* Style for individual buttons */
+.button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #1a0033;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  top: 30px;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #330066;
+  color: #fff;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 300px; /* Adjust the distance from the top to your preference */
+}
+
+.video-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.video-card {
+  background-color: #330066;
+  border: 1px solid #1a0033;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  max-width: 100%
+}
+.video-card:hover {
+  background-color: #0a001a;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.video-card h5 {
+  margin: 0;
+}
+
+.video-card a {
+  color: #8533ff;
+}
+
+.video-card img {
+  max-width: 100%;
+}
+
+.video-container {
+  position: absolute;
+  touch-action: pinch-zoom;
+}
+
+.video-cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-cards:active {
+  cursor: grabbing;
+}
+
+.refresh-button {
+  background: #8000ff; /* Change background color to white */
+  color: #fff;
+  padding: 10px; /* Increase padding for a more modern look */
+  border: 1px solid #8000ff; /* Add border for a cleaner look */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Increase margin for spacing */
+  width: 30%; /* Make the input field full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-size: 16px; /* Adjust font size */
+  transition: border-color 0.3s; /* Add transition for a smoother effect */
+  position: absolute;
+  left: 30px;
+  top: 200px;
+}
+
+.notification-container {
+  background: #8000ff; /* Change background color to white */
+  color: #fff;
+  padding: 10px; /* Increase padding for a more modern look */
+  border: 1px solid #8000ff; /* Add border for a cleaner look */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Increase margin for spacing */
+  width: 30%; /* Make the input field full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-size: 16px; /* Adjust font size */
+  transition: border-color 0.3s; /* Add transition for a smoother effect */
+  position: absolute;
+  left: 600px;
+  top: 100px;
+}
+
+.refresh-button:hover {
+  background-color: #330066;
+  transition: all 0.3s ease-in-out;
+}
+
+.video-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+  background-color: #8000ff; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+.video-container::-webkit-scrollbar-track {
+  background-color: #2c084f; /* Color of the scrollbar track */
+}

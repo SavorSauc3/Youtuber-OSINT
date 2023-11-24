@@ -1,0 +1,176 @@
+/* THEMES */
+
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif; /* Change to Lato font */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #5900b3, #26004d);
+    background-size: 200% 100%;
+    animation: gradientAnimation 10s cubic-bezier(0.42, 0, 1, 1) infinite alternate;
+  }
+  
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: linear-gradient(to left, #ff0066 0%, #9900ff 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-size: calc(10px + 2vmin);
+    color: white; /* Change text color to white */
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Adjust chat bar styling */
+  .chat-bar {
+    border: 1px solid #1a0033; /* Use color from the gradient */
+    padding: 10px;
+    max-width: 400px;
+    margin: 0;
+    background: #330066; /* Change background color to solid white */
+    position: fixed; /* Set the position to fixed */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    border-radius: 20px; /* Add border radius for tapered edges */
+  }
+  
+  .search-bar {
+    border: 1px solid #1a0033;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the search bar horizontally */
+    background: #330066;
+    position: absolute; /* Set the position to absolute */
+    top: 150px; /* Adjust the distance from the top as needed */
+    left: 50%; /* Center the search bar horizontally */
+    transform: translateX(-50%); /* Center the search bar horizontally */
+    border-radius: 20px;
+  }
+  
+  .messages {
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #8000ff;
+    margin-bottom: 10px;
+    background: #2c084f;
+    padding: 10px; /* Add padding for centering */
+    word-wrap: break-word;
+  }
+  
+  .user {
+    background: #330066; /* Change background color to a light gray */
+    color: #8000ff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    color: #8000ff;
+  }
+  
+  .chat-button {
+    color: #fff;
+    background: #8000ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button {
+    color: #fff;
+    background: #8000ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background: #330066;
+  }
+  
+  .input-field {
+    background: #fff; /* Change background color to white */
+    color: #8000ff;
+    padding: 10px; /* Increase padding for a more modern look */
+    border: 1px solid #8000ff; /* Add border for a cleaner look */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Increase margin for spacing */
+    width: 100%; /* Make the input field full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 16px; /* Adjust font size */
+    transition: border-color 0.3s; /* Add transition for a smoother effect */
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #330066; /* Change border color on focus */
+  }
+  
+  .messages::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .messages::-webkit-scrollbar-thumb {
+    background-color: #8000ff; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+  }
+  
+  .messages::-webkit-scrollbar-track {
+    background-color: #2c084f; /* Color of the scrollbar track */
+  }
+  
+  .App-header {
+    color: #8000ff;
+  }
+  
+  .errorMsg {
+    border: 1px solid #1a0033;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the search bar horizontally */
+    background: #330066;
+    color: #8000ff;
+    position: absolute; /* Set the position to absolute */
+    top: 150px; /* Adjust the distance from the top as needed */
+    left: 50%; /* Center the search bar horizontally */
+    transform: translateX(-50%); /* Center the search bar horizontally */
+    border-radius: 20px;
+  }
